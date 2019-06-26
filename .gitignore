@@ -1,0 +1,8 @@
+*.o
+*.order
+*.ko
+*.mod
+*.symvers
+*.cproject
+*.linKPlus
+*.project
