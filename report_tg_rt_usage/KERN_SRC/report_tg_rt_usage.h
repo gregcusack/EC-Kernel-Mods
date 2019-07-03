@@ -21,6 +21,8 @@
 #include "/home/greg/kernel-dev/linux-stable/kernel/sched/sched.h"
 #include "/home/greg/kernel-dev/linux-stable/include/linux/cgroup-defs.h"
 #include <linux/nsproxy.h>
+#include <linux/delay.h>
+#include <linux/cpumask.h>
 
 
 #include <linux/moduleparam.h>
@@ -34,6 +36,9 @@ module_param(pid, int, 0);
 MODULE_PARM_DESC(pid, "PID of proc to get task_struct");
 
 //int read_proc(char *buf, char **start, off_t offset, int count, int *eof, void *data);
-void report(int _pid);
+int report(int _pid);
 
 struct task_group* get_task_group(int _pid);
+struct sched_entity* get_sched_entity(struct task_struct *ts);
+
+void alloc_mem(int n_cpus);

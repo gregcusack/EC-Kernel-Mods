@@ -6,3 +6,6 @@
 *.cproject
 *.linKPlus
 *.project
+*.mod.c
+*.o.cmd
+*.cmd

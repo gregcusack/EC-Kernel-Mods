@@ -1417,6 +1417,9 @@ deps_/home/greg/kernel-dev/linux-stable/gc-mods/report_tg_rt_usage/KERN_SRC/repo
   /home/greg/kernel-dev/linux-stable/kernel/sched/autogroup.h \
   /home/greg/kernel-dev/linux-stable/kernel/sched/features.h \
   /home/greg/kernel-dev/linux-stable/include/linux/cgroup-defs.h \
+  include/linux/delay.h \
+  arch/x86/include/asm/delay.h \
+  include/asm-generic/delay.h \
 
 /home/greg/kernel-dev/linux-stable/gc-mods/report_tg_rt_usage/KERN_SRC/report_tg_rt_usage.o: $(deps_/home/greg/kernel-dev/linux-stable/gc-mods/report_tg_rt_usage/KERN_SRC/report_tg_rt_usage.o)
 
